@@ -1,5 +1,4 @@
-import React from 'react';
-import { Map, ScrollText } from 'lucide-react';
+import React, { Map, ScrollText } from 'lucide-react';
 
 interface NavbarProps {
   setActiveTab: (tab: 'Map' | 'Credits') => void;

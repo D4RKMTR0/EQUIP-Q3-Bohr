@@ -1,7 +1,5 @@
-import React from 'react';
 import { RevealOnScroll } from '../hooks/revealOnScroll';
 
-// Shared styles for the category headers
 const CategoryHeader = ({ title}: { title: string;}) => (
   <div className="flex flex-col items-center mb-6 group">
     <div className="flex items-center gap-2">
@@ -18,10 +16,10 @@ const Credits = () => {
     {
       title: "Mappers",
       members: [
-        "Fogarty (Lead Developer)",
+        "Fogarty (Lead Developer, Leader)",
         "Garcia (Coordinates)",
         "Jose (Coordinates)",
-        "Marquina (Research/Locations)"
+        "Marquina (Research/Locations, Assistant Leader)"
       ]
     },
     {
@@ -37,15 +35,15 @@ const Credits = () => {
     {
       title: "Researchers",
       members: [
-        "Bañares (Script)", "Valverde (PPT)", "Buenafe", "Bascon", "Bejasa", 
+        "Bañares (Script, Leader)", "Roxas (Leader)", "Valverde (PPT)", "Buenafe", "Bascon", "Bejasa", 
         "Cabase", "Chavez", "Clemente", "Gomez", "Obina", "Ramos", 
-        "Rocero", "Roxas", "Sabilla"
+        "Rocero", "Sabilla"
       ]
     },
     {
       title: "Yell & Performance",
       members: [
-        "Raquedan", "Totaan", "Vasquez", "De Jesus", "Jordan", 
+        "Raquedan", "Totaan", "Daniel Vasquez", "De Jesus", "Jordan", 
         "Mercado", "Argamosa (Dancer)", "Enriquez (Props)"
       ]
     }

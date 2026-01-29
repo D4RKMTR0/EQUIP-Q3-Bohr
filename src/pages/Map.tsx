@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import { ChevronLeft, Square, Box, X, Star, TriangleAlert, Droplets, Activity } from 'lucide-react';
+import { ChevronLeft, Square, Box, X, Star, TriangleAlert, Activity } from 'lucide-react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
 import LOCATIONS from '../json/loc.json';
@@ -475,11 +475,8 @@ export default function Map({setActiveTab}: MapProps) {
                     <p className='mr-2'>Calamity Simulations</p>
                 </div>
                 <div className='flex gap-1'>
-                    <button onClick={() => {setMode("Earthquake"); sideBarToggle(true);}} title="Earthquake" className='text-white/40 flex justify-center align-center border border-white/20 rounded p-1 hover:text-white hover:bg-white/10 transition-all duration-250'>
+                    <button onClick={() => {setMode("Earthquake"); sideBarToggle(true);}} title="Earthquake" className={`text-white/40 flex justify-center align-center border border-white/20 rounded p-1 transition-all duration-250 ${mode == "Earthquake" ? 'bg-red-500/60' : 'hover:text-white hover:bg-white/10'}`}>
                         <Activity />
-                    </button>
-                    <button title="Flood" className='text-white/40 flex justify-center align-center border border-white/20 rounded p-1 hover:text-white hover:bg-white/10 transition-all duration-250'>
-                        <Droplets />
                     </button>
                 </div>
             </div>
