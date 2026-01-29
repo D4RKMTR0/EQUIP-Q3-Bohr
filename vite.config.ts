@@ -8,4 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
+  base: 'https://D4RKMTR0.github.io/EQUIP-Q3-Bohr/',
 })
